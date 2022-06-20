@@ -9,7 +9,6 @@ grayImage = cv2.cvtColor(rawMask, cv2.COLOR_BGR2GRAY)
 mask = cv2.bitwise_not(mask)
 res = cv2.bitwise_and(img,img,mask = mask)
 
-cv2.imshow('mask', mask)
 cv2.imshow('res', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
